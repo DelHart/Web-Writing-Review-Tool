@@ -1,0 +1,8 @@
+
+
+# grant select, insert on all tables in schema public to writer
+# grant all on all sequences in schema public to writer
+
+script/aw_create.pl model DB DBIC::Schema WDB create=static "dbi:Pg:dbname=writing;host=host" user password
+
+

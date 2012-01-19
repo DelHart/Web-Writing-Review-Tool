@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+          "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Editor</title>
+<script type="text/ecmascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../jquery.json-2.2.min.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../util.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../web.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../essay.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../editor.js')%]"> </script>
+<script type="text/ecmascript"> <!--
+var local_editor = new Editor ();
+
+function init () {
+
+    URI_BASE = '[%c.uri_for ('/')%]';
+    local_editor.init ('control_area', 'editing_area', [% essay %], true );
+
+} // init
+
+-->
+</script>
+    
+</head>
+<body onload='init()'>
+
+<form>
+<table>
+<tr>
+<td valign='top' id='control_area'/> 
+<td id='editing_area'/>
+</tr>
+</table>
+
+</form>
+
+<h2>Message</h2>
+<div id='message'>Byte says "How's the weather?" </div>
+
+</body>
+
+</html>

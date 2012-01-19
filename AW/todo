@@ -1,0 +1,62 @@
+
+get review
+load review
+save review
+
+
+single save at a time
+
+autosave
+
+error on bad username
+
+prevent saving to unowned files
+
+error on permission denied
+
+view / history of files
+
+-----------
+
+review
+  - show essay
+  - populate review with who should do what reviews
+  - display essay, display review data
+  - overall data
+  - review data for each paragraph
+
+- perhaps only do overall review right now
+
+- add paragraph review later
+
+review
+   overall quality
+   length
+   use of framework
+   evidence
+   create date
+   revision
+
+acl table to describe who can see review
+   - want to not release reviews until time
+
+----------------
+
+separate out view and controller on the javascript side, have render methods in the javascript
+that maps the essay/paragraph data onto the ui
+
+           Model             View
+           Essay             Editor
+           Paragraph         Review
+           Reference
+           Review
+
+----------
+
+student writes essay
+
+essay gets reviews - by other students, by instructor
+
+student can revise essay
+
+repeat

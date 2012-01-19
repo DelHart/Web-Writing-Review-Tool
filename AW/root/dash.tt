@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+          "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Assignment List</title>
+<script type="text/ecmascript"  src="[%c.uri_for ('../util.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../web.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../dash.js')%]"> </script>
+<script type="text/ecmascript"> <!--
+var local_dash = new Dash ();
+
+function init () {
+
+    URI_BASE = '[%c.uri_for ('/')%]';
+    console.log ('dash init');
+    local_dash.init ('assignment_list_area');
+
+} // init
+
+-->
+</script>
+    
+</head>
+<body onload='init()'>
+
+<form>
+<table border='1'>
+<tr><th>Assignment</th><th>Info</th><th>Status</th><th>Action</th><th>Due Date</th></tr>
+<tbody id='assignment_list_area'/> 
+</table>
+
+<table border='1'>
+    <tr><th>Review </th><th>Review Last Changed</th></tr>
+    <tbody id='review_list_area'/>
+</table>
+
+</form>
+<h2>Message</h2>
+<div id='message'> Attempting to load data...   </div>
+</body>
+
+</html>

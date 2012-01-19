@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+          "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Review</title>
+<script type="text/ecmascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../jquery.json-2.2.min.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../util.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../web.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../essay.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../review.js')%]"> </script>
+<script type="text/ecmascript"> <!--
+var local_review = new Review ();
+
+function init () {
+
+    URI_BASE = '[%c.uri_for ('/')%]';
+    local_review.init ('control_area', 'editing_area', [% essay %] );
+    local_review.showRubric ('rubric_table');
+
+} // init
+
+-->
+</script>
+    
+</head>
+<body onload='init()'>
+
+<form>
+<div id='editing_area'></div>
+
+<h2> Review Form </h2>
+<div id='control_area'></div>
+
+<div id='rubric_table'></div>
+
+</form>
+
+<h2>Message</h2>
+<div id='message'>If the essay to be reviewed does not load within a minute, please notify the instructor.</div>
+
+</body>
+
+</html>

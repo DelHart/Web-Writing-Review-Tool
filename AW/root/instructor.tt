@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+          "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Assignment List</title>
+<script type="text/ecmascript"  src="[%c.uri_for ('../dl/util.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../dl/web.js')%]"> </script>
+<script type="text/ecmascript"  src="[%c.uri_for ('../idash.js')%]"> </script>
+<script type="text/ecmascript"> <!--
+var local_dash = new IDash ();
+
+function init () {
+
+    URI_BASE = '[%c.uri_for ('/')%]';
+    console.log ('dash init');
+    local_dash.init ('assignment_list_area');
+
+} // init
+
+-->
+</script>
+    
+</head>
+<body onload='init()'>
+
+<form>
+<table border='1'>
+<tr><th>Assignment</th><th>Name</th><th>Due Date</th><th>Info</th><th>URL</th></tr>
+<tbody id='assignment_list_area'/> 
+</table>
+
+<table border='1'>
+<tr><th>Person</th><th>Status</th><th>Essay</th></tr>
+<tbody id='essay_list_area'/> 
+</table>
+
+
+</form>
+<h2>Message</h2>
+<div id='message'>Bit says "Nice to see you today." </div>
+</body>
+
+</html>

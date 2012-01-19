@@ -1,0 +1,4 @@
+
+UID          Description
+-2           Empty assignment list
+-1           One assignment pending
